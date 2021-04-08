@@ -1,0 +1,10 @@
+//Cycle type and returns one of the items found as 'found'
+//equip 'found'
+//Resume: Just attack some other character and this macro will
+// make character always equip weapon, after weapon breaks,
+// for skill/stat training.
+if @findtype 0x13b2 'any' 'backpack' //Use Object Inspector to get Weapon Type
+  attack '0xf5b2b' //Use Object Inspector and get partner Serial 
+  equipitem 'found' 1
+  pause 2000
+endif
